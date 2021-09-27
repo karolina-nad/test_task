@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "First announcement",
+    "description": "Something",
+    "date": "26.09.2021, 19:33:12"
+  },
+  {
+    "id": 2,
+    "title": "Second announcement",
+    "description": "Some text",
+    "date": "26.09.2021, 19:40:12"
+  },
+  {
+    "id": 3,
+    "title": "first",
+    "description": "qwerty",
+    "date": "26.09.2021, 19:45:12"
+  }
+]

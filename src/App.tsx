@@ -82,7 +82,14 @@ class App extends React.Component<{}, State> {
     if (this.state.titleNew && this.state.descriptionNew) {
       this.setState((currentState) => {
         const lengthOfArray = currentState.announcements.length;
-        const newId = currentState.announcements[lengthOfArray - 1].id + 1;
+        let newId = 0;
+
+        if (lengthOfArray === 0) {
+          newId = 1;
+        } else {
+          newId = currentState.announcements[lengthOfArray - 1].id + 1;
+        }
+
         const newTitle = currentState.titleNew;
         const newDescription = currentState.descriptionNew;
         const newDate = new Date().toLocaleString();

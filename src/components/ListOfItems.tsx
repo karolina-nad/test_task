@@ -43,7 +43,7 @@ export const ListOfItems: React.FC<Props> = ({
             </>
           ))}
       </ul>
-      {filterItems.length === 0 && 'Not found'}
+      {filterItems.length === 0 && <div className="app__not-found">Not found</div>}
     </>
   );
 };
